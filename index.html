@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABSEN - 07 Nov 2026</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#061a14;color:white}
+.hero{position:relative;min-height:85vh;background:linear-gradient(rgba(0,0,0,0.15), rgba(6,26,20,1)), url('absen.jpg');background-size:cover;background-position:center top;display:flex;align-items:flex-end;padding:20px}
+.hero-content{width:100%;max-width:500px;margin:0 auto}
+.badge-date{background:#d4c06a;color:#0a2214;padding:8px 16px;border-radius:30px;font-weight:900;display:inline-block;margin-bottom:12px;font-size:14px}
+.hero h1{font-size:42px;font-weight:900;color:#d4c06a;line-height:0.9;letter-spacing:2px}
+.hero h2{font-size:28px;font-weight:900;margin:10px 0;line-height:1.1}
+.hero .loc{background:rgba(0,0,0,0.65);backdrop-filter:blur(10px);padding:12px 16px;border-radius:12px;margin-top:15px;border-left:4px solid #d4c06a}
+.container{max-width:500px;margin:0 auto;padding:20px 15px;background:#0a2214}
+.countdown{display:flex;gap:10px;justify-content:center;margin:20px 0}
+.cd-box{background:#12382a;border-radius:12px;padding:12px 8px;text-align:center;flex:1;border:1px solid #1e5a40}
+.cd-num{font-size:26px;font-weight:900;color:#d4c06a}
+.cd-label{font-size:10px;color:#8ab0a0}
+.title{color:#d4c06a;text-align:center;font-size:22px;font-weight:900;margin:25px 0 15px}
+.card{border-radius:18px;padding:16px;margin:16px 0;background:linear-gradient(135deg,#12382a,#0f2e22);border:1px solid #1e5a40}
+.card.vip{border-color:#d4c06a;border-width:2px;background:linear-gradient(135deg,#1a3d2e,#2a2a1a)}
+.price{font-size:32px;font-weight:900;margin:12px 0}
+.old-price{text-decoration:line-through;color:#5a8a72;font-size:14px;margin-right:8px}
+.btn-buy{display:block;background:#25D366;color:white;padding:14px;border-radius:30px;text-decoration:none;font-weight:900;text-align:center;margin-top:12px}
+.btn-buy.vip{background:#d4c06a;color:#0a2214}
+.video-box{border-radius:18px;overflow:hidden;border:2px solid #1e5a40;background:black;margin:16px 0}
+.video-box video{width:100%;display:block}
+.info-box{background:#12382a;border-radius:14px;padding:16px;margin:12px 0;display:flex;gap:12px;align-items:center;border:1px solid #1e5a40}
+.pay-box{display:flex;justify-content:space-between;background:white;color:#111;border-radius:12px;padding:12px 16px;margin:10px 0}
+.footer{text-align:center;padding:30px 20px;color:#5a8a72;background:#061a14}
+</style>
+</head>
+<body>
+
+<div class="hero">
+<div class="hero-content">
+<div class="badge-date">📅 07 NOVEMBRE 2026</div>
+<h1>ABSEN</h1>
+<h2>TERRAIN DE BASKET<br><span style="font-size:18px;font-weight:400;color:#cde0d6">Ancienne Maison des Jeunes</span></h2>
+<div class="loc">
+<div style="font-weight:800;color:#d4c06a">📍 TERRAIN DE BASKET</div>
+<div style="font-size:13px;color:#cde0d6;margin-top:4px">Ancienne Maison des Jeunes - Nouakchott</div>
+<div style="font-size:12px;color:#8ab0a0;margin-top:6px">Organisé par HMR PRESENT</div>
+</div>
+</div>
+</div>
+
+<div class="container">
+
+<div class="countdown">
+<div class="cd-box"><div class="cd-num" id="days">--</div><div class="cd-label">JOURS</div></div>
+<div class="cd-box"><div class="cd-num" id="hours">--</div><div class="cd-label">HEURES</div></div>
+<div class="cd-box"><div class="cd-num" id="mins">--</div><div class="cd-label">MIN</div></div>
+<div class="cd-box"><div class="cd-num" id="secs">--</div><div class="cd-label">SEC</div></div>
+</div>
+
+<div class="title">🎬 TEASER OFFICIEL - DO NOU</div>
+<div class="video-box">
+<video autoplay muted loop playsinline controls poster="absen.jpg">
+<source src="absen.mp4" type="video/mp4">
+</video>
+</div>
+<p style="text-align:center;color:#8ab0a0;font-size:11px;margin-top:-8px;margin-bottom:10px">Vidéo sans son automatique - Clique pour activer le son 🔊</p>
+
+<div class="title">🎫 BILLETS PRÉVENTE</div>
+
+<div class="card">
+<h3>🎟️ SIMPLE <span style="background:#25D366;color:white;padding:3px 8px;border-radius:6px;font-size:10px;margin-left:8px">PRÉVENTE</span></h3>
+<div class="price"><span class="old-price">200 MRU</span>150 MRU</div>
+<div style="font-size:12px;color:#8ab0a0">Accès Terrain - Jour J : 200 MRU</div>
+<a href="https://wa.me/22234190047?text=Salam%20je%20veux%20Billet%20SIMPLE%20ABSEN%20150MRU" class="btn-buy">Acheter Simple 150 MRU</a>
+</div>
+
+<div class="card vip">
+<h3>⭐ VIP <span style="background:#d4c06a;color:#0a2214;padding:4px 10px;border-radius:20px;font-size:10px;font-weight:900;margin-left:6px">MEILLEUR CHOIX</span></h3>
+<div class="price"><span class="old-price">400 MRU</span>300 MRU</div>
+<div style="font-size:12px;color:#c9b86a">Zone VIP Proche Scène - Jour J : 400 MRU</div>
+<a href="https://wa.me/22234190047?text=Salam%20je%20veux%20Billet%20VIP%20ABSEN%20300MRU" class="btn-buy vip">Acheter VIP 300 MRU</a>
+</div>
+
+<div class="title">ℹ️ INFOS</div>
+<div class="info-box"><div>📅</div><div><b>07 Novembre 2026 - 18H00</b><br><span style="font-size:13px;color:#8ab0a0">Terrain de Basket - Ancienne MJ</span></div></div>
+<div class="info-box"><div>📞</div><div><b>34190047 / 48900473</b><br><span style="font-size:13px;color:#8ab0a0">HMR Present - Emerald</span></div></div>
+
+<div class="title">💳 PAIEMENT</div>
+<div class="pay-box"><b>Sedad</b><span style="font-weight:900">34190047</span></div>
+<div class="pay-box"><b>Bankily</b><span style="font-weight:900">34190047</span></div>
+<div class="pay-box"><b>Masrvi</b><span style="font-weight:900">48900473</span></div>
+
+<a href="https://wa.me/22234190047?text=Salam%20je%20veux%20billet%20ABSEN" style="display:block;background:white;color:#0a2214;padding:16px;border-radius:50px;text-align:center;font-weight:900;text-decoration:none;margin:25px 0;font-size:18px">💬 WhatsApp Billets: 34190047</a>
+</div>
+
+<div class="footer">
+<p style="font-weight:900;color:#d4c06a">ABSEN - THE BBTS</p>
+<p style="margin:8px 0">HMR PRESENT • EMERALD</p>
+<p style="font-size:11px">DO NOU - OUT NOW</p>
+</div>
+
+<script>
+const target = new Date('2026-11-07T18:00:00').getTime();
+setInterval(()=>{
+  const now = new Date().getTime();
+  const diff = target - now;
+  if(diff>0){
+    document.getElementById('days').innerText = Math.floor(diff/(1000*60*60*24));
+    document.getElementById('hours').innerText = Math.floor((diff%(1000*60*60*24))/(1000*60*60));
+    document.getElementById('mins').innerText = Math.floor((diff%(1000*60*60))/(1000*60));
+    document.getElementById('secs').innerText = Math.floor((diff%(1000*60))/1000);
+  }
+},1000);
+</script>
+</body>
+  </html>
